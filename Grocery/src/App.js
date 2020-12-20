@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import List from './List'
 import Alert from './Alert'
+import Footer from './Footer'
 
 
 const getLocalStorage = () => {
@@ -71,60 +72,63 @@ function App() {
     localStorage.setItem('list', JSON.stringify(list));
   }, [list]);
   return (
-    <section className='section-center'>
-      <form className='grocery-form' onSubmit={handleSubmit} >
-        {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
+    <>
+      <section className='section-center'>
+        <form className='grocery-form' onSubmit={handleSubmit} >
+          {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
 
-        <h3>grocery bud</h3>
+          <h3>grocery bud</h3>
 
-        <div className='form-control'>
+          <div className='form-control'>
 
-          <input
-            type='text'
-            className='grocery'
-            placeholder='e.g. eggs'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <h4 className='label'>Item Name</h4>
-        <div className='form-control'>
+            <input
+              type='text'
+              className='grocery'
+              placeholder='e.g. eggs'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <h4 className='label'>Item Name</h4>
+          <div className='form-control'>
 
-          <input
-            type='number'
-            className='grocery'
-            id='amount'
-            name='amount'
-            placeholder='e.g. 100'
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
-          />
-        </div>
-        <h4 className='label'>Charge</h4>
-        <button type='submit' className='submit-btn'>
-          {isEditing ? 'edit' : 'submit'}
-        </button>
-      </form>
-      {list.length > 0 && (
-        <div className='grocery-container'>
-          <List items={list} removeItem={removeItem} editItem={editItem} />
-          <button className='clear-btn' onClick={clearList}>
-            clear items
+            <input
+              type='number'
+              className='grocery'
+              id='amount'
+              name='amount'
+              placeholder='e.g. 100'
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
+            />
+          </div>
+          <h4 className='label'>Charge</h4>
+          <button type='submit' className='submit-btn'>
+            {isEditing ? 'edit' : 'submit'}
           </button>
-          <h4>
-            Total :{" "}
-            <span className="total">
+        </form>
+        {list.length > 0 && (
+          <div className='grocery-container'>
+            <List items={list} removeItem={removeItem} editItem={editItem} />
+            <button className='clear-btn' onClick={clearList}>
+              clear items
+          </button>
+            <h4>
+              Total :{" "}
+              <span className="total">
 
-              $
+                $
           {list.reduce((acc, curr) => {
-              return (acc += parseInt(curr.amount));
-            }, 0)}
-            </span>
-          </h4>
-        </div>
+                return (acc += parseInt(curr.amount));
+              }, 0)}
+              </span>
+            </h4>
+          </div>
 
-      )}
-    </section>
+        )}
+      </section>
+      <Footer />
+    </>
   );
 }
 
