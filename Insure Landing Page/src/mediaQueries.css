@@ -1,0 +1,163 @@
+/* from screen size of ipad to big screen */
+
+@media screen and (min-width: 768px) {
+    .links a {
+        color: var(--grayish-blue);
+        font-size: 1rem;
+        text-transform: capitalize;
+        letter-spacing: var(--spacing);
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+    .links a:hover {
+        color: var(--very-dark-violet);
+        padding-left: 1.5rem;
+    }
+    .inner {
+        padding: 0;
+    }
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header {
+        padding: 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .links-container {
+        height: auto !important;
+        background-color: transparent;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .links a {
+        padding: 0;
+        margin: 0 0.7rem;
+        text-transform: uppercase;
+    }
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+    .nav-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+        font-weight: 700;
+        line-height: 1.5;
+        color: var(--very-dark-violet);
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid var( --very-dark-violet);
+        padding: 0.3rem 1.7rem;
+        font-size: 0.9rem;
+        transition: background-color 1s ease-in-out;
+        text-transform: uppercase;
+    }
+    .nav-btn:hover {
+        background-color: var(--very-dark-violet);
+        border: 1px solid var( --very-light-violet);
+        color: var(--very-light-gray)
+    }
+    .bg-nav-mobile {
+        display: none;
+    }
+    /*
+  ======================== INTRO =============================== 
+  */
+    #intro {
+        background-color: var(--very-dark-violet);
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+    }
+    .intro-main:before {
+        content: "";
+        display: block;
+        border-bottom: 1px solid var(--very-light-gray);
+        width: 10rem;
+        margin: 2.5rem 0;
+    }
+    .intro-main {
+        color: var(--very-light-gray);
+        font-family: 'DM Serif Display', serif;
+        font-weight: 400;
+        line-height: 4rem;
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
+    .intro-btn {
+        display: inline-block;
+        font-weight: 700;
+        line-height: 1.5;
+        color: var(--very-light-gray);
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid var( --very-light-gray);
+        padding: 0.3rem 1.7rem;
+        font-size: 0.9rem;
+        transition: background-color 1s ease-in-out;
+        text-transform: uppercase;
+    }
+    .intro-btn:hover {
+        background: var(--very-light-gray);
+        color: var(--very-dark-violet);
+        transition: ease-out 1s;
+    }
+    .intro-text-area {
+        margin: 2.5rem 0;
+    }
+    #intro .intro-text {
+        color: var(--very-light-gray);
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+    }
+    .introBgMobile, .mobile-intro-section {
+        display: none;
+    }
+    .introBgDesktop {
+        display: block;
+        height: 80vh;
+        position: absolute;
+        top: 11rem;
+        right: 10rem;
+    }
+    .desktop-intro-section {
+        display: block;
+    }
+    /* ============================ABOUT */
+    .card {
+        display: flex;
+    }
+}
+
+/* SPECIAL CASES */
+
+@media only screen and (min-width:455px) {
+    .bg-nav-mobile {
+        width: 44rem;
+        height: auto;
+    }
+}

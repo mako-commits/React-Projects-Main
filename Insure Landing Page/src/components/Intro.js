@@ -1,0 +1,51 @@
+import React from 'react'
+import introBgMobile from '../images/image-intro-mobile.jpg'
+import introBgDesktop from '../images/image-intro-desktop.jpg'
+import Grid from '@material-ui/core/Grid'
+import Container from '@material-ui/core/Container'
+import introLeftMb from '../images/bg-pattern-intro-left-mobile.svg'
+import introRightMb from '../images/bg-pattern-intro-right-mobile.svg'
+function Intro() {
+    return (
+        <>
+            <section id='intro'>
+                <img src={introBgMobile} alt='img' className='introBgMobile' />
+                <img src={introBgDesktop} alt='img' className='introBgDesktop' />
+                <Grid container>
+                    <Grid item xs={12} lg={6}>
+                        <Container maxWidth='sm'>
+                            <div className='desktop-intro-section'>
+                                <div className="intro-text-area-inner">
+                                    <h2 className="intro-main">Humanizing <br />your insurance.</h2>
+                                    <p className="intro-text">Get your life insurance coverage easier and faster. We blend our expertise
+                                    and technology to help you find the plan that’s right for you. Ensure you
+                                and your loved ones are protected.</p>
+
+                                    <button className="intro-btn">View Plans</button>
+                                </div>
+                            </div>
+
+                        </Container>
+                        <div className='mobile-intro-section'>
+                            <Container>
+                                <div className="mb-intro-text-area-inner">
+                                    {/* <img src={introLeftMb} alt='img' className='introLeftMb' /> */}
+                                    <h2 className="intro-main">Humanizing <br />your insurance.</h2>
+                                    <p className="intro-text">Get your life insurance coverage easier and faster. We blend our expertise
+                                    and technology to help you find the plan that’s right for you. Ensure you
+                                and your loved ones are protected.</p>
+
+                                    <button className="intro-btn">View Plans</button>
+                                </div>
+                            </Container>
+
+                        </div>
+                    </Grid>
+                </Grid>
+            </section>
+
+        </>
+    )
+}
+
+export default Intro
