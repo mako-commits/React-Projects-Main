@@ -3,35 +3,62 @@ import cardDetail from '../data'
 import Grid from '@material-ui/core/Grid'
 import Container from '@material-ui/core/Container'
 import GridListTile from '@material-ui/core/GridListTile';
+import Card from 'react-bootstrap/Card'
 import { GridList } from '@material-ui/core';
-function Card() {
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+// import Container from 'react-bootstrap/Container'
+import CardDetail from './CardDetail'
+import snappyImg from '../images/icon-snappy-process.svg'
+import affordableImg from '../images/icon-affordable-prices.svg'
+import peopleImg from '../images/icon-people-first.svg'
+
+function Carrd() {
     return (
         <>
-            <Container>
-                <GridListTile item xs={3} col={2.5}>
-                    {cardDetail.map((detail) => {
-                        const { id, img, title, text } = detail;
-                        return (
-                            <div className='card'>
+            <section className='about'>
+                <Container>
+
+                    <h3 className="about-heading">We're different</h3>
+                    <Row className='card'>
+                        <Col>
+                            <CardDetail
+                                img={snappyImg}
+                                title='snappy process'
+                                text='Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.'
+                            >
+
+                            </CardDetail>
+                        </Col>
+                        <Col>
+                            <CardDetail
+                                img={affordableImg}
+                                title='affordable prices'
+                                text='We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.'
+                            >
+
+                            </CardDetail>
+                        </Col>
+
+                        <Col>
+                            <CardDetail
+                                img={peopleImg}
+                                title='people first'
+                                text='Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.'
+                            >
+
+                            </CardDetail>
+                        </Col>
 
 
-                                <div className='about-info'>
-                                    <img src={img} />
-                                    <h4 className='about-info-heading'>{title}</h4>
-                                    <p>{text}</p>
-                                </div>
 
 
+                    </Row>
+                </Container>
+            </section>
 
-                            </div>
-
-
-                        )
-                    })}
-                </GridListTile>
-            </Container>
         </>
     )
 }
 
-export default Card
+export default Carrd

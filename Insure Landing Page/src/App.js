@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
-import Card from './components/Card'
+import Carrd from './components/Card'
 
 
 
@@ -14,7 +14,7 @@ function App() {
 
       <Navbar />
       <Intro />
-      <Card />
+      <Carrd />
     </>
 
 
