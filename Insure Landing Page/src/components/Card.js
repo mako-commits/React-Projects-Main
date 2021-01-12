@@ -15,49 +15,48 @@ import peopleImg from '../images/icon-people-first.svg'
 
 function Carrd() {
     return (
-        <>
-            <section className='about'>
-                <Container>
 
-                    <h3 className="about-heading">We're different</h3>
-                    <Row className='card'>
-                        <Col>
-                            <CardDetail
-                                img={snappyImg}
-                                title='snappy process'
-                                text='Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.'
-                            >
+        <section className='container'>
+            <div className='about'>
+                <h3 className="about-heading">We're different</h3>
+                <div className='row about-main'>
+                    <div className='col-lg-4 col-md-12 about-info'>
+                        <CardDetail
 
-                            </CardDetail>
-                        </Col>
-                        <Col>
-                            <CardDetail
-                                img={affordableImg}
-                                title='affordable prices'
-                                text='We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.'
-                            >
-
-                            </CardDetail>
-                        </Col>
-
-                        <Col>
-                            <CardDetail
-                                img={peopleImg}
-                                title='people first'
-                                text='Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.'
-                            >
-
-                            </CardDetail>
-                        </Col>
+                            img={snappyImg}
+                            title='snappy process'
+                            text='Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.'
+                        >
+                        </CardDetail>
+                    </div>
 
 
+                    <div className='col-lg-4 col-md-12 about-info '>
+                        <CardDetail
+
+                            img={affordableImg}
+                            title='affordable prices'
+                            text='We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.'
+                        >
+                        </CardDetail>
+                    </div>
 
 
-                    </Row>
-                </Container>
-            </section>
+                    <div className='col-lg-4 col-md-12 about-info'>
+                        <CardDetail
 
-        </>
+                            img={peopleImg}
+                            title='people first'
+                            text='Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.'
+                        >
+                        </CardDetail>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
     )
 }
 
