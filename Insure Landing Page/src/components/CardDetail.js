@@ -1,9 +1,9 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card'
+
 function CardDetail(props) {
     return (
         <>
-            <div style={{ width: '18rem' }}  >
+            <div style={{ width: '18rem', margin: '0 auto' }}  >
 
                 <div>
                     <img src={props.img} />

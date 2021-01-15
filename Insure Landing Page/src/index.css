@@ -169,16 +169,17 @@ nav {
   height: 40px;
 }
 
-.links a {
+.navbar-links a {
   color: var(--very-light-gray);
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: var(--spacing);
   display: block;
   padding: 0.5rem 1rem;
 }
 
-.links a:hover, .nav-btn:hover {
+.navbar-links a:hover, .nav-btn:hover {
+  color: var(--very-light-gray);
   padding-left: 1.5rem;
 }
 
@@ -332,6 +333,14 @@ CARD
   margin: 3rem auto;
 } */
 
+/* 
+======================================================ABOUT
+*/
+
+.about {
+  margin-bottom: 7rem;
+}
+
 .about-heading:before {
   content: "";
   display: block;
@@ -362,11 +371,13 @@ CARD
 }
 
 .about-main {
-  /* align-items: center;
-  justify-content: center; */
-  /* padding-left: 100px;
-  padding-right: 100px; */
   text-align: center;
+  margin: 0 auto;
+}
+
+.about-info {
+  margin: 0 auto;
+  padding-left: 4rem;
 }
 
 /* 
@@ -430,6 +441,8 @@ CARD
 
 #footer {
   text-align: center;
+  background: var(--clr-white);
+  margin-top: 4rem;
 }
 
 .social {
@@ -441,6 +454,7 @@ CARD
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding: 0;
 }
 
 .social-links li {
@@ -459,8 +473,14 @@ CARD
   font-size: 0.8rem;
 }
 
+.footer-bottom ul {
+  padding: 0;
+  text-align: center;
+}
+
 .footer-bottom a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
+  color: var(--very-dark-violet);
 }
 
 .list-head {

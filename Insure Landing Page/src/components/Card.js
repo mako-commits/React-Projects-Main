@@ -1,12 +1,4 @@
 import React from 'react'
-import cardDetail from '../data'
-import Grid from '@material-ui/core/Grid'
-import Container from '@material-ui/core/Container'
-import GridListTile from '@material-ui/core/GridListTile';
-import Card from 'react-bootstrap/Card'
-import { GridList } from '@material-ui/core';
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
 // import Container from 'react-bootstrap/Container'
 import CardDetail from './CardDetail'
 import snappyImg from '../images/icon-snappy-process.svg'

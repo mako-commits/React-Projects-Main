@@ -24,7 +24,7 @@ const Navbar = () => {
 
                 <div className={`${showLinks ? 'links-container show-container' : 'links-container'}`} >
                     <div className='inner'>
-                        <ul className='links' >
+                        <ul className='navbar-links' >
                             {links.map((link) => {
                                 const { id, url, text } = link;
                                 return (
