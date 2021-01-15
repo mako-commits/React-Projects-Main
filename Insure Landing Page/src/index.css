@@ -514,3 +514,12 @@ BACKGROUND PATTERNS
   top: 53rem;
   left: 0;
 }
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

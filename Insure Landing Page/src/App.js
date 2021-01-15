@@ -4,6 +4,7 @@ import Intro from './components/Intro'
 import Carrd from './components/Card'
 import More from './components/More'
 import Footer from './components/Footer'
+import Atrribution from './components/Attribution'
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Carrd />
       <More />
       <Footer />
+      <Atrribution />
     </>
 
 
