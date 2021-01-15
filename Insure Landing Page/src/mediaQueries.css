@@ -152,7 +152,7 @@
     }
     /* ============================ABOUT */
     .about {
-        margin-top: 15rem;
+        margin-top: 20rem;
         margin-bottom: 7rem;
     }
     .about-main {
@@ -180,38 +180,50 @@
     .more-inner {
         text-align: start;
         height: 15rem;
-        padding: 70px 40px
+        padding: 70px 40px;
+        background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: right 4px top 2px
     }
     .inner-more {
+        text-align: start;
         position: relative;
-        /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
     }
     /* 
     =====================================+++FOOTER
     
     */
     #footer {
+        padding: 4rem 0;
         margin-top: 10rem;
         text-align: start;
+        background-color: var(--very-light-gray);
+        background-image: url('./images/bg-pattern-footer-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: left 4px top 2px
     }
     .footer-bottom ul {
         text-align: left;
         padding: 0;
     }
-    /* .footer-bottom::before {
-        content: "";
-        display: block;
-        border-bottom: 1px solid var(--grayish-blue);
-        width: 10rem;
-        margin: 2.5rem 0;
-    } */
+    .footer-bottom li {
+        margin: 0.5rem 0;
+    }
 }
 
 /* 
 =======================================================MORE
 */
+
+/* 
+BACKGROUND PATTERNS
+*/
+
+.introRightDesktop {
+    /* display: block; */
+    position: absolute;
+    right: 0rem;
+}
 
 /* SPECIAL CASES */
 

@@ -317,23 +317,6 @@ nav {
 }
 
 /* 
-.introLeftMb {
-  position: absolute;
-  top: 47rem;
-  left: 0.2rem;
-} */
-
-/* 
-CARD
-*/
-
-/* 
-.carrd {
-  text-align: center;
-  margin: 3rem auto;
-} */
-
-/* 
 ======================================================ABOUT
 */
 
@@ -384,17 +367,26 @@ CARD
 ================================MORE
 */
 
+.mobile-intro-section {
+  background-color: var(--very-dark-violet);
+  background-image: url('./images/bg-pattern-intro-right-mobile.svg'), url('./images/bg-pattern-intro-left-mobile.svg');
+  background-repeat: no-repeat no-repeat;
+  background-position: right 0px top 45vh, left 0 top 0;
+  position: relative;
+}
+
 .more-inner {
   text-align: center;
   height: 20rem;
   background-color: var(--very-dark-violet);
-  /* background-image: url("../images/bg-pattern-how-we-work-desktop.svg"); */
-  background-repeat: no-repeat;
-  background-position: left 55vw top 0.1vh;
   position: relative;
+  background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right 0px top 2px
 }
 
 .inner-more {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -441,8 +433,11 @@ CARD
 
 #footer {
   text-align: center;
-  background: var(--clr-white);
   margin-top: 4rem;
+  background-color: var(--very-light-gray);
+  background-image: url('./images/bg-pattern-footer-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: left 4px top 0;
 }
 
 .social {
@@ -471,6 +466,7 @@ CARD
   font-family: 'Karla', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
+  margin: 0.5rem 0;
 }
 
 .footer-bottom ul {
@@ -494,7 +490,7 @@ CARD
 
 .footer-logo {
   height: 1rem;
-  margin: 1rem auto;
+  margin: 3rem auto;
 }
 
 .social-links li {
@@ -507,4 +503,14 @@ CARD
 
 .links {
   float: right;
+}
+
+/* 
+BACKGROUND PATTERNS
+*/
+
+.introLeftMb {
+  position: absolute;
+  top: 53rem;
+  left: 0;
 }
